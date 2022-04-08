@@ -8,7 +8,7 @@ export const Post = (props) => {
                 <img src="https://cspromogame.ru//storage/upload_images/avatars/1299.jpg" alt="Avatar"/>
                 {props.message}
                 <div>
-                    Like
+                    Like {props.likescount}
                 </div>
             </div>
         </div>

@@ -1,4 +1,13 @@
+.postsBlock {
+    padding: 20px;
+}
+
 .item {
-    color: green;
     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.posts {
+    margin-top: 20px;
 }
