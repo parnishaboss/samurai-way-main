@@ -9,15 +9,16 @@ import {News} from './Components/News/News';
 import {Music} from './Components/Music/Music';
 import {Settings} from './Components/Settings/Settings';
 
-export const App = () => {
+export const App = (props:any) => {
+
     return (
         <BrowserRouter>
             <div className="App-wrapper">
                 <Header/>
                 <Navbar/>
                 <div className="App-wrapper-content">
-                    <Route path="/profile" render={() => <Profile/>}/>
-                    <Route path="/dialogs" render={() => <Dialogs/>}/>
+                    <Route path="/profile" render={() => <Profile posts={props.posts}/>}/>
+                    <Route path="/dialogs" render={() => <Dialogs dialogs={props.dialogs} messages={props.messages}/>}/>
                     <Route path="/news" render={() => <News/>}/>
                     <Route path="/music" render={() => <Music/>}/>
                     <Route path="/settings" render={() => <Settings/>}/>
